@@ -1,9 +1,19 @@
 .img {
   display: block;
   margin: 0 auto;
+  border-radius: 50%;
 }
 
 .bio {
   margin: 20px auto;
   width: 300px;
+}
+
+.bio::first-line {
+  font-weight: bold;
+}
+
+body {
+  align-content: center;
+  justify-content: center;
 }

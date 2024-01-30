@@ -5,28 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,700;1,200;1,400&family=Poppins:wght@100;200;300;400&family=Raleway:wght@100;200;300&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>03 - Images</title>
   </head>
   <body>
     <!-- Exercise: Fix all semantics issues in the following HTML structure -->
     <main>
-      <h1 class="overall-title">03 - Images</h1>
-      <img
-        width="300"
-        height="300"
-        class="image"
-        src="../../images/psu-eb.jpg"
-        alt="engineering building at PSU" />
-      <p class="general-text engineering-building-description">
-        The Engineering Building is a concrete and glass, five-story building
-        located on SW 4th Avenue just south of the Fourth Avenue Building and
-        City of Portland Development Tower. The basement of the Engineering
-        Building pre-dates its construction and is actually part of the Fourth
-        Avenue Building. Designed by the architectural firm, Zimmer Gunsul
-        Frasca, the Engineering Building was completed in early 2006.
-      </p>
+      <h1 id="title" class="overall-title">03 - Images</h1>
+      <figure>
+        <img
+          width="300"
+          height="300"
+          class="image"
+          src="../../images/psu-eb.jpg"
+          alt="Engineering building at PSU"
+        />
+        <figcaption class="general-text engineering-building-description">
+          The Engineering Building is a concrete and glass, five-story building
+          located on SW 4th Avenue just south of the Fourth Avenue Building and
+          City of Portland Development Tower. The basement of the Engineering
+          Building pre-dates its construction and is actually part of the Fourth
+          Avenue Building. Designed by the architectural firm, Zimmer Gunsul
+          Frasca, the Engineering Building was completed in early 2006.
+        </figcaption>
+      </figure>
     </main>
   </body>
 </html>
