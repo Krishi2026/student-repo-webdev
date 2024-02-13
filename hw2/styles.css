@@ -28,8 +28,288 @@ form {
 
 /* Code for exercise 01-navbar */
 
+.navbarhtml {
+  margin: 0px;
+  padding: 0px;
+}
+.navbar {
+  background-color: var(--black);
+  height: 60px;
+  padding: 0px;
+}
+.navbar a {
+  text-decoration: none;
+  margin: 0px;
+  color: var(--white);
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar li {
+  display: inline-block;
+  margin: 0px;
+  padding: 17px;
+  border-left: 10px;
+  border-left-style: solid;
+  border-right: 10px;
+  border-right-style: solid;
+  border-width: 0px;
+}
+.navbar li:hover {
+  background-color: var(--violetred);
+}
+
+@media (min-width: 800px) {
+  .navbar ul {
+    justify-content: right;
+
+    border-left: 0px;
+    border-left-style: none;
+    border-right: 0px;
+    border-right-style: none;
+    border-width: 0px;
+  }
+}
+
 /* Code for exercise 02-cards */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 350px;
+  border: 2px solid var(--black);
+  background-color: var(--white);
+  padding: 15px;
+}
+
+.cardheader {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: 0px;
+}
+
+.cardimage {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.cardimage img {
+  max-width: 250px;
+}
+
+.cardcontent {
+  font-size: 18px;
+  color: var(--gray);
+  word-break: initial;
+}
+
+.cardfooter {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.cardfooter button {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 10px 125px;
+  border: 0;
+}
+
+.cardfooter button:hover {
+  background-color: var(--violetred);
+}
+
+.cardscontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+@media (min-width: 1000px) {
+  .cardscontainer {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card {
+    height: 520px;
+    width: 300px;
+  }
+
+  .cardcontent {
+    font-size: 16px;
+    color: var(--gray);
+    word-break: initial;
+  }
+
+  .cardfooter button {
+    padding: 10px 100px;
+  }
+}
 
 /* Code for exercise 03-table */
 
+.tvlistings {
+  justify-content: center;
+  align-items: center;
+  color: var(--black);
+  margin: 0px;
+  text-align: center;
+}
+
+.listings {
+  width: 80%;
+  margin: 0px auto;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+
+.listings th,
+.listings td {
+  border: 1px solid var(--black);
+  padding: 10px;
+}
+
+.listings th {
+  background-color: var(--black);
+  color: var(--white);
+  text-align: center;
+}
+
+.listings td {
+  text-align: left;
+}
+
+.listings td:first-child {
+  background-color: var(--violetred);
+  color: var(--white);
+  text-align: center;
+}
+
+.listings tbody tr:hover {
+  background-color: var(--orange);
+}
+
+@media (max-width: 600px) {
+  .listings th,
+  .listings td {
+    font-size: 0.8em;
+    padding: 5px;
+  }
+}
+
 /* Code for exercise 04-form */
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup {
+  padding: 10px;
+  border: 2px solid var(--black);
+  margin: auto;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.signup h2 {
+  text-align: left;
+  margin-bottom: 2px;
+}
+
+.signup h3 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: var(--gray);
+  font-size: 0.9em;
+}
+
+.formgroup {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.formgroup label {
+  width: 130px;
+  text-align: left;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.formgroup input[type="text"],
+.formgroup input[type="email"],
+.formgroup input[type="password"],
+.formgroup input[type="date"] {
+  width: calc(100% - 145px);
+  padding: 5px;
+  border: 1px solid var(--black);
+}
+
+.btngroup {
+  gap: 3px;
+  margin-top: 20px;
+}
+
+.primarybutton,
+.secondarybutton {
+  padding: 10px 70px;
+  border: 0;
+  font-size: 1em;
+}
+
+.primarybutton {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.primarybutton:hover {
+  background-color: var(--violetred);
+}
+
+.secondarybutton {
+  background-color: var(--white);
+  border: 2px solid var(--black);
+}
+
+.secondarybutton:hover {
+  background-color: #e1e1e1;
+}
+
+.pronoungroup {
+  border: 0;
+  padding: 0px;
+  font-weight: bold;
+}
+
+.pronoungroup label {
+  font-weight: normal;
+}
+
+@media (max-width: 800px) {
+  .primarybutton,
+  .secondarybutton {
+    padding: 10px 65px;
+    font-size: 0.9em;
+  }
+
+  .btngroup {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+}

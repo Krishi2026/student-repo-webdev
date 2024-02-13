@@ -7,10 +7,94 @@
     <title>04 - Form</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="form">
     <main>
       <h1>Exercise 04 - Form</h1>
       <!-- Add your code here -->
+
+      <section class="signup">
+        <h2>Sign Up Form</h2>
+        <h3>Fill up the items in the form below.</h3>
+
+        <form action="/submit" method="post">
+          <div class="formgroup">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Krishna Karthik"
+              required
+            />
+          </div>
+          <div class="formgroup">
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Krishna Karthik"
+              required
+            />
+          </div>
+          <div class="formgroup">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="kchava@pdx.edu"
+              required
+            />
+          </div>
+          <div class="formgroup">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="XXXXXXXX"
+              required
+            />
+          </div>
+          <div class="formgroup">
+            <label for="dob">Date of birth:</label>
+            <input type="date" id="dob" name="dob" required />
+          </div>
+          <fieldset class="pronoungroup">
+            <legend>Preferred Pronouns</legend>
+            <input type="radio" id="sheher" name="pronouns" value="she/her" />
+            <label for="sheher">She/her</label>
+            <br />
+            <input
+              type="radio"
+              id="hehim"
+              name="pronouns"
+              value="he/him"
+              checked
+            />
+            <label for="hehim">He/him</label> <br />
+            <input
+              type="radio"
+              id="theythem"
+              name="pronouns"
+              value="they/them"
+            />
+            <label for="theythem">They/them</label><br />
+            <input
+              type="radio"
+              id="noanswer"
+              name="pronouns"
+              value="prefer not to say"
+            />
+            <label for="noanswer">I prefer not to say</label> <br />
+          </fieldset>
+          <div class="btngroup">
+            <button type="submit" class="primarybutton">Submit</button>
+            <button type="reset" class="secondarybutton">Reset</button>
+          </div>
+        </form>
+      </section>
     </main>
   </body>
 </html>
