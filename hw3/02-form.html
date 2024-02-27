@@ -8,10 +8,94 @@
     <link rel="stylesheet" href="styles.css" />
     <script defer src="02-form.js"></script>
   </head>
-  <body>
+  <body class="mainform">
     <main>
       <h1>Exercise 02 - Form</h1>
       <!-- You can reuse the form you created in HW 2 -->
+
+      <section class="inner-form">
+        <h2>Sign Up Form</h2>
+        <h3>Fill up the items in the form below.</h3>
+        <form action="/submit" method="post">
+          <div class="formgroup">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Krishna Karthik"
+              required
+            />
+          </div>
+          <div class="formgroup">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="krishna"
+              required
+            />
+          </div>
+          <div class="formgroup">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="kchava@pdx.edu"
+              required
+            />
+          </div>
+          <div class="formgroup">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="***********"
+              required
+            />
+          </div>
+          <div class="formgroup">
+            <label for="dob">Date of birth</label>
+            <input
+              type="date"
+              name="dob"
+              id="dob"
+              required
+            />
+          </div>
+          <fieldset class="pronoungroup">
+            <legend>Preferred Pronouns</legend>
+            <input type="radio" name="pronouns" id="She/her" value="She/her" />
+            <label for="She/her">She/her</label>
+            <br />
+            <input type="radio" name="pronouns" id="He/him" value="He/him" />
+            <label for="He/him">He/him</label>
+            <br />
+            <input
+              type="radio"
+              name="pronouns"
+              id="They/them"
+              value="They/them"
+            />
+            <label for="They/them">They/them</label>
+            <br />
+            <input
+              type="radio"
+              name="pronouns"
+              id="Prefernottosay"
+              value="Prefer not to say"
+            />
+            <label for="Prefernottosay">I prefer not to say</label>
+          </fieldset>
+          <div class="buttons">
+            <input type="submit" class="submit" value="Submit" />
+            <input type="reset" class="reset" value="Reset" />
+          </div>
+        </form>
+      </section>
     </main>
   </body>
 </html>
